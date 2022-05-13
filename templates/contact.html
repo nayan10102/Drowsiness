@@ -23,12 +23,33 @@
 			border: 4px solid rgba(32,33,36);
 			/* border: 4px solid #fff; */
 			border-radius: 20px;
-			margin: 20px 40px 0px;
+			margin: 20px 40px 20px;
 			background: linear-gradient(rgba(89, 86, 86, 0.5), rgba(22, 21, 21, 0.5)), url("../static/assets/banner.webp");
 			background-position: center bottom;
 		}
 
-		
+		.heading1{
+      border:4px solid;
+      padding:10px;
+      border-radius:10px;
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading2{
+      border:4px solid;
+      padding:10px;
+      border-radius:10px;
+      margin:10px;
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
 		.title{
 			font-size:3rem;
 		}
@@ -44,12 +65,15 @@
 
 		.desc{
 			/* border:2px solid #fff; */
+      margin:10px;
 			border: 4px solid rgba(32,33,36);
 			padding:20px;
 			border-radius:20px;
-			display:grid;
-			font-size:1.3rem;
-   			row-gap: 10px;
+			display:flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
 			letter-spacing: 1px;
 			color:rgba(32,33,36);
 			background-color: #fff;
@@ -94,29 +118,18 @@
 			
 		}
 
-
-		.text-effect {
-    		padding: 40px;
-    		font-size: 1.2rem;
-   			margin: 5px;
-    		border-radius: 20px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.stats {
-			border: 4px solid rgba(32,33,36);
-   		 	border-radius: 10px;
-   			padding: 10px;
-			background: linear-gradient(rgba(89, 86, 86, 0.5), rgba(22, 21, 21, 0.5)), url("../static/assets/accident2.webp");
-			-webkit-box-shadow: 3px 3px 35px -5px rgba(0,0,0,0.75);	
-			-moz-box-shadow: 3px 3px 35px -5px rgba(0,0,0,0.75);
-			box-shadow: 3px 3px 35px -5px rgba(0,0,0,0.75);
-		}
 		img{
 			width:100%;
 			border-radius: 20px;
 		}
+
+    .box-content{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:10px
+    }
 
 	</style>	
 	
@@ -124,42 +137,70 @@
 <body>
 	<div class="pimg1">
         <div class="container1">
-  			<div class="title">DROWSINESS DETECTION SYSTEM</div>
-  			<div class="subtitle"> The best drivers are aware that they must be beware. </div>
+  			<div class="title">Meet The Creators</div>
 		</div>
   </div>
-  <div class="text-effect">
-	  <div class="stats">
-	STAT ALERT!! 
-		</div>
-</div>
-
 					<div class="direction-r r-div">
 						<div class="desc">
-							<img src="../static/assets/accident.jpeg">
-							4 percent or approximately eleven million drivers admit they have had an accident or near accident because they dozed off or were too tired to drive.
-							Sleep-related crashes are most common in young people between the ages of 18 and 29.
-							The National Highway Traffic Safety Administration estimates that 100,000 accidents are the direct result of driver fatigue each year.
-						</div>
-						<div class="desc">
-							<img src="../static/assets/accident2.webp">
-							4 percent or approximately eleven million drivers admit they have had an accident or near accident because they dozed off or were too tired to drive.
-							Sleep-related crashes are most common in young people between the ages of 18 and 29.
-							The National Highway Traffic Safety Administration estimates that 100,000 accidents are the direct result of driver fatigue each year.
-						</div>
-						<div class="desc">
+              <div class="descs">
 							<img src="../static/assets/accident3.jpg">
-							Vehicular crashes result in an estimated 1,550 deaths, 71,000 injuries, and 12.5 billion dollars in monetary losses each year.
-							According to data from Australia, England, Finland, and other European nations, drowsy driving represents 10 to 30 percent of all accidents.
-							Drivers who slept 4 hours less had 10 times the crash rate of drivers who slept for regular times.</div>
-					</div>
-				</div>
+              <div class="box-content">
+                <div class = "heading1">Aryaman Chettri</div>
+                <div class = "heading2">aryamanchettri@gmail.com</div>
+                </div>
+              </div>
+						</div>
+            <div class="desc">
+              <div class="descs">
+							<img src="../static/assets/accident.jpeg">
+              <div class="box-content">
+                <div class = "heading1">Nayan Sharma</div>
+                <div class = "heading2">nayansharma@gmail.com</div>
+                </div>
+              </div>
+						</div>
+            <div class="desc">
+              <div class = "descs">
+							<img src="../static/assets/accident.jpeg">
+              <div class="box-content">
+                <div class = "heading1">Neha Singh</div>
+                <div class = "heading2">nehasingh@gmail.com</div>
+              </div>
+              </div>
+						</div>
+            <div class="desc">
+              <div class="descs">
+							<img src="../static/assets/accident.jpeg">
+              <div class="box-content">
+                <div class = "heading1">Anurodhan Pradhan</div>
+                <div class = "heading2">anurodhanpradhan@gmail.com</div>
+              </div>
+              </div>
+						</div>
+            <div class="des">
+              <div class="des">
+							<img src="">
+              <div class="box-content">
+                <div class = ""></div>
+                <div class = ""></div>
+              </div>
+              </div>
+						</div>
+            <div class="desc">
+              <div class = "descs">
+							<img src="../static/assets/accident.jpeg">
+              <div class="box-content">
+                <div class = "heading1">Pragya Subba</div>
+                <div class = "heading2">pragyasubba@gmail.com</div>
+              </div>
+              </div>
+						</div>
+				</div>  
 
 				<div class = "button">
 					<form method="post" action="/start">
 						<input type="submit" class="button2" value="Start" name="Start"/>
-				  </form>
-					  <a href="contact.html" class="btn btn-outline-warning btn-lg" style = "text-decoration: none;">Meet the Creators</a>
+          </form>
   				</div>	
 			</body>
 </html>
