@@ -14,15 +14,9 @@ app.config['DEBUG'] = True
 # Defining the home page of our site
 @app.route("/",methods=['GET', 'POST'])
 def home():
-    print(request.method)
-    if request.method == 'POST':
-        if request.form.get('Continue') == 'Continue':
-           return render_template("test1.html")
-    else:
-        # pass # unknown
         return render_template("index.html")
 
-@app.route("/start", methods=['GET', 'POST'])
+@app.route("/start", methods=['GET', 'POST'])       
 def index():
     print(request.method)
     if request.method == 'POST':
