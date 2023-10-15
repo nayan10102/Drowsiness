@@ -1,57 +1,91 @@
+### Driver Drowsiness Detection System
 
-Installing and Configuring dlib:
-We need to create an enivronment in order to install dlib, as it cannot be directly installed using pip. So, follow this commands in order to install dlib into your system if you haven't installed it previously. Make sure you have Anaconda installed, as we will be doing everyting in Anaconda Prompt.
+This repository contains a Python program designed to detect driver drowsiness by analyzing eye movements and yawing patterns in real-time. Detecting drowsiness is critical for road safety as it helps prevent accidents caused by driver fatigue.
 
-Step 1: Update conda
+### Installation and Configuration:
 
+**Prerequisites:**
 
+-   Ensure you have Anaconda installed on your system.
 
-conda update conda
+**Step 1: Update Conda**
 
+bash
 
-Step 2: Update anaconda
+`conda update conda` 
 
+**Step 2: Update Anaconda**
 
-conda update anaconda 
+bash
 
+`conda update anaconda` 
 
-Step 3: Create a virtual environment
+**Step 3: Create a Virtual Environment**
 
+bash
 
-conda create -n env_dlib 
+`conda create -n env_dlib python=3.8` 
 
+**Step 4: Activate the Virtual Environment**
 
-Step 4: Activate the virtual environment
+bash
 
+`conda activate env_dlib` 
 
+**Step 5: Install dlib**
 
-conda activate env_dlib
+bash
 
+`conda install -c conda-forge dlib` 
 
-Step 5: Install dlib
+If all these steps are completed successfully, dlib will be installed in the virtual environment `env_dlib`. Use this environment for running the drowsiness detection system.
 
+**Step to Deactivate the Virtual Environment**
 
-conda install -c conda-forge dlib 
+bash
 
+`conda deactivate` 
 
-If all these steps are completed successfully, then dlib will be installed in the virtual environment env_dlib. Make sure to use this environment to run the entire project.
+### Running the Drowsiness Detection System:
 
-Step to deactivate the virtual environment
-conda deactivate 
-Running the system:
-Step 1:
-Clone the repository into your system by:
+**Step 1: Clone the Repository**
 
-git clone
+bash
 
+`git clone <repository_url>` 
 
-Step 2:
-Install all the system requirments by:
+**Step 2: Install System Requirements**
 
-pip install -r requirements.txt
-Step 3:
-After the system has been setup. Run the command:
+bash
 
-python app1.py
-Step 4:
-Open your browser and in the search bar type: localhost:8000 as this port is mostly used by flask. In case, this port is not available in your system, flask will try to use another port. The port number will be displayed in the command prompt. So, type in the same port number in that case as: localhost:<port_number>.
+`pip install -r requirements.txt` 
+
+**Step 3: Set up and Run the System**
+
+bash
+
+`python app1.py` 
+
+**Step 4: Access the System**
+
+-   Open your web browser.
+-   In the address bar, type `localhost:8000`. If port 8000 is already in use, Flask will automatically choose another available port and display it in the command prompt. In that case, access the system using `localhost:<port_number>`.
+
+### About the Drowsiness Detection System:
+
+The drowsiness detection system uses computer vision and machine learning to monitor driver behavior, focusing on two primary factors:
+
+1.  **Eye Blink Detection:**
+    
+    -   The system calculates the Euclidean distance between the driver's eyelids. An increase in this distance, which often occurs when a person's eyes are closed or nearly closed, indicates drowsiness.
+    -   When the system detects an unusual increase in eyelid distance over a certain period, it triggers an alert to notify the driver to stay alert.
+2.  **Yawning Pattern Detection:**
+    
+    -   The program also monitors the driver's yawning patterns, a common sign of drowsiness.
+    -   By analyzing facial expressions and movements, the system recognizes yawning and issues an alert if excessive yawning is detected.
+
+### Safety Reminder:
+
+This system is a valuable tool for drowsiness detection, but it should not replace the driver's responsibility to remain alert and attentive while driving. Always prioritize safe driving practices and use this system as an additional safety measure.
+
+By following these steps, you can install, configure, and use the driver drowsiness detection system to enhance road safety.
